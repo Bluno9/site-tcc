@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hypertrofit</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo" id="logo">
+      <img src="images/logo.png" alt="logo">
+    </div>
+    <div class="language">
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="pt">Portuguese</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+      <div class="menu">
+        <a href="#" id="home-link"><i class="fas fa-home"></i> Home</a>
+        <a href="#" id="workouts-link"><i class="fas fa-dumbbell"></i> Workouts</a>
+        <a href="#" id="tools-link"><i class="fas fa-list"></i> Tools</a>
+        <div class="submenu" id="tools-submenu">
+          <a href="#" id="calorie-link">Calorie Calculator</a>
+          <a href="#" id="macro-link">Macro Calculator</a>
+          <a href="#" id="one-rep-link">One Rep Max Calculator</a>
+        </div>
+        <a href="#" id="login-link"><i class="fas fa-sign-in-alt"></i> Login</a>
+        <a href="#" id="register-link"><i class="fas fa-user-plus"></i> Register</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="main-content">
+        <div class="images">
+          <img src="images/maquina.jpg" alt="Gym equipment including weights and machines" width="600" height="400">
+        </div>
+        <div class="filters">
+          <h3 id="equipment-title">Equipment</h3>
+          <div class="filter-group" id="filter-group">
+            <label><input type="checkbox" checked> <span>Featured</span></label>
+            <label><input type="checkbox"> <span>Dumbbells</span></label>
+            <label><input type="checkbox"> <span>Machine</span></label>
+            <label><input type="checkbox"> <span>Kettlebells</span></label>
+            <label><input type="checkbox"> <span>Cables</span></label>
+            <label><input type="checkbox"> <span>Plate</span></label>
+            <label><input type="checkbox"> <span>Yoga</span></label>
+            <label><input type="checkbox"> <span>Vitruvian</span></label>
+            <label><input type="checkbox"> <span>Smith Machine</span></label>
+            <label><input type="checkbox"> <span>Barbell</span></label>
+            <label><input type="checkbox"> <span>Bodyweight</span></label>
+            <label><input type="checkbox"> <span>Medicine Ball</span></label>
+            <label><input type="checkbox"> <span>Stretches</span></label>
+            <label><input type="checkbox"> <span>Band</span></label>
+            <label><input type="checkbox"> <span>TRX</span></label>
+            <label><input type="checkbox"> <span>Bosu Ball</span></label>
+            <label><input type="checkbox"> <span>Cardio</span></label>
+            <label><input type="checkbox"> <span>Recovery</span></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

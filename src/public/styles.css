@@ -1,0 +1,167 @@
+/* Estilos globais */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 80px; /* Definindo altura fixa para o cabeçalho */
+}
+
+#logo img {
+    max-width: 100px; /* Limita a largura da logo para 100px */
+    height: auto; /* Ajusta a altura automaticamente mantendo a proporção */
+    object-fit: contain; /* Garante que a logo se ajuste sem cortar ou distorcer */
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    flex: 1;
+    margin-top: 80px; /* Ajusta o conteúdo para baixo para não cobrir o cabeçalho fixo */
+    margin-left: 250px; /* Ajusta o conteúdo para não sobrepor a sidebar fixa */
+    padding: 20px; /* Adiciona espaço dentro do container */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #1a3d7c;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: calc(100vh - 80px); /* Sidebar ajustada para a altura da tela */
+    position: fixed;
+    top: 80px; /* Sidebar começa abaixo do cabeçalho */
+    left: 0;
+    overflow-y: auto;
+    padding-top: 80px; /* Aumenta o espaço entre o topo da sidebar e os links */
+}
+
+/* Ajuste para os links da sidebar */
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+/* Outros estilos permanecem os mesmos */
+
+
+/* Content */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Main content */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.main-content .images {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e7ef;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.main-content .filters {
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes nos filtros para botões um abaixo do outro */
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter-group label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.filter-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a3d7c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin-left: 0; /* Remove o espaçamento lateral para telas menores */
+        margin-top: 150px; /* Ajusta o conteúdo para baixo devido ao cabeçalho fixo */
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative; /* Sidebar passa a não ser fixa em telas menores */
+        top: 0;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-content .filters {
+        width: 100%;
+    }
+}

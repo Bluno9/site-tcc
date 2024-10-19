@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MuscleWiki</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo" data-en="MUSCLEWIKI" data-pt="MUSCLEWIKI">MUSCLEWIKI</div>
+    <div class="language">
+      <select id="language-selector">
+        <option value="en">English</option>
+        <option value="pt">Portuguese</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+      <div class="menu">
+        <a href="#" data-en="Home" data-pt="Início"><i class="fas fa-home"></i> Home</a>
+        <a href="#" data-en="Workouts" data-pt="Treinos"><i class="fas fa-dumbbell"></i> Workouts</a>
+        <a href="#" data-en="Routines" data-pt="Rotinas"><i class="fas fa-list"></i> Routines</a>
+        <a href="#" data-en="Tools" data-pt="Ferramentas"><i class="fas fa-tools"></i> Tools</a>
+        <a href="#" data-en="Articles" data-pt="Artigos"><i class="fas fa-book"></i> Articles</a>
+        <a href="#" data-en="Directory" data-pt="Diretório"><i class="fas fa-address-book"></i> Directory</a>
+        <a href="#" data-en="Login" data-pt="Entrar"><i class="fas fa-sign-in-alt"></i> Login</a>
+        <a href="#" data-en="Register" data-pt="Registrar"><i class="fas fa-user-plus"></i> Register</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="main-content">
+        <div class="image-container">
+          <img src="https://storage.googleapis.com/a1aa/image/NmhjHApjoNYcIxxnMJ0cC8CwjYyl24OAeTs8PWpgnG0VHN0JA.jpg" alt="Gym equipment" width="600" height="400">
+        </div>
+        <div class="filters">
+          <h3 data-en="Equipment" data-pt="Equipamento">Equipment</h3>
+          <div class="filter-group">
+            <label><input type="checkbox" checked> Featured</label>
+            <label><input type="checkbox"> Dumbbells</label>
+            <label><input type="checkbox"> Machine</label>
+            <label><input type="checkbox"> Kettlebells</label>
+            <!-- Adicionar mais filtros conforme necessário -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="#" data-en="YouTube" data-pt="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="#" data-en="Instagram" data-pt="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" data-en="Twitter" data-pt="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" data-en="Facebook" data-pt="Facebook"><i class="fab fa-facebook"></i></a>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
